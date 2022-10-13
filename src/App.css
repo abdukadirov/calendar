@@ -1,0 +1,112 @@
+body {
+    background: #e9e9e9 !important;
+}
+
+.content {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.content h2 {
+    margin-bottom: 50px;
+    text-shadow: 5px 2px 8px rgba(0,0,0,0.78);
+}
+
+.content .calendar {
+    width: 600px;
+    height: auto;
+    display: flex;
+    align-content: flex-start;
+    flex-wrap: wrap;
+    box-shadow: 15px 15px 20px 0 rgba(0, 0, 0, 0.1),
+    -15px -15px 20px #fffb;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.calendar .week-names {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.week-names .week-names-item {
+    width: 40px;
+    height: 40px;
+    padding: 8px;
+    margin: 20px;
+    font-weight: bold;
+    text-shadow: 5px 2px 8px rgba(0,0,0,0.78);
+}
+
+.calendar .calendar-item {
+    width: 40px;
+    height: 40px;
+    padding: 15px;
+    margin: 20px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .3s linear;
+    pointer-events: none;
+}
+
+.calendar-item:active {
+    box-shadow: none;
+}
+
+.calendar-item p {
+    margin: 0;
+}
+
+.calendar .yellow {
+    background: #ffc069;
+    box-shadow: 0 0 16px 6px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    pointer-events: visible;
+}
+
+.yellow:active {
+    box-shadow: none;
+}
+
+.calendar .green {
+    background: #95de64;
+    box-shadow: 0 0 16px 6px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    pointer-events: visible;
+}
+
+.green:active {
+    box-shadow: none;
+}
+
+.calendar .grey {
+    box-shadow: 0 0 16px 6px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    pointer-events: visible;
+}
+
+.grey:active {
+    box-shadow: none;
+}
+
+.calendar .holiday {
+    color: red;
+    box-shadow: none;
+    cursor: default !important;
+    text-shadow: 5px 2px 8px rgba(0,0,0,0.78);
+    background: none;
+    pointer-events: none;
+}
+
+
+.none {
+    opacity: 0;
+    cursor: default !important;
+}
